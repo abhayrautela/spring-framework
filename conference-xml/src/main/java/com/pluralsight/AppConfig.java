@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import com.pluralsight.repository.HibernateSpeakerRepositoryImpl;
 import com.pluralsight.repository.SpeakerRepository;
 import com.pluralsight.service.SpeakerService;
