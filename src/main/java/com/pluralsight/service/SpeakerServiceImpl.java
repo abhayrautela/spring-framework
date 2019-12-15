@@ -20,9 +20,9 @@ public class SpeakerServiceImpl implements SpeakerService {
     }
 
     @Autowired
-    public SpeakerServiceImpl(SpeakerRepository speakerRepository) {
+    public SpeakerServiceImpl(SpeakerRepository speakerJdbcRepository) {
         System.out.println("In constructor with one args");
-        this.repository = speakerRepository;
+        this.repository = speakerJdbcRepository;
     }
 
     public void setRepository(SpeakerRepository repository) {
