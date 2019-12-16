@@ -13,9 +13,9 @@ public class SpeakerServiceImpl implements SpeakerService {
         System.out.println("In constructor with no args");
     }
 
-    public SpeakerServiceImpl(SpeakerRepository speakerJdbcRepository) {
+    public SpeakerServiceImpl(SpeakerRepository SpeakerRepository) {
         System.out.println("In constructor with one args");
-        this.repository = speakerJdbcRepository;
+        this.repository = SpeakerRepository;
     }
 
     public void setSpeakerRepository(SpeakerRepository repository) {
