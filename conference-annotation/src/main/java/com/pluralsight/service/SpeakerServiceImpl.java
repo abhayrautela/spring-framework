@@ -7,6 +7,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service("speakerService")
@@ -19,10 +20,15 @@ public class SpeakerServiceImpl implements SpeakerService {
         System.out.println("In constructor with no args");
     }
 
+    @PostConstruct
+    private void initialize() {
+        System.out.println("I should be called after the constructor.");
+    }
+
     @Autowired
-    public SpeakerServiceImpl(SpeakerRepository speakerJdbcRepository) {
+    public SpeakerServiceImpl(SpeakerRepository speakerHibernateRepository) {
         System.out.println("In constructor with one args");
-        this.repository = speakerJdbcRepository;
+        this.repository = speakerHibernateRepository;
     }
 
     public void setRepository(SpeakerRepository repository) {
