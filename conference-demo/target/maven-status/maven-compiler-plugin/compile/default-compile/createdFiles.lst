@@ -1,0 +1,9 @@
+com/pluralsight/conferencedemo/repositories/SessionRepository.class
+com/pluralsight/conferencedemo/repositories/SpeakerRepository.class
+com/pluralsight/conferencedemo/controllers/HomeController.class
+com/pluralsight/conferencedemo/controllers/SessionController.class
+com/pluralsight/conferencedemo/controllers/SpeakerController.class
+com/pluralsight/conferencedemo/ConferenceDemoApplication.class
+com/pluralsight/conferencedemo/config/PersistenceConfiguration.class
+com/pluralsight/conferencedemo/models/Session.class
+com/pluralsight/conferencedemo/models/Speaker.class
